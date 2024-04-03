@@ -1,5 +1,117 @@
-.container{
-    height: 100vh;
-    background-color: '#EDF1F7';
-    width: 100%;
+.container {
+  height: 100vh;
+  background-color: #edf1f7;
+  width: 100%;
+  height: 90vh;
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: slideIn 1s ease forwards;
 }
+.leftSide {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  height: 70vh;
+}
+.leftSide h1{
+    font-size: 2.5rem;
+}
+.coloredText{
+    color: #4154f1;
+}
+.leftSide p{
+    width: 90%;
+    font-size:  1.15rem;
+}
+form {
+  width: 40%;
+  height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.radio {
+  display: flex;
+  gap: 1rem;
+  width: 80%;
+}
+.student,
+.Admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  height: 8vh;
+  background-color: rgb(240, 244, 251);
+  border: 1px solid #717ff2;
+  border-radius: 8px;
+  padding: 0rem 0.3rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.3rem;
+}
+
+.inputs input {
+  height: 40px;
+  padding: 0.4rem;
+  border: 2px solid rgb(170, 170, 170);
+  border-radius: 4px;
+}
+.cheakcbox{
+    display: flex;
+    gap: 5px;
+}
+.btnLogin {
+  width: 15%;
+  height: 6vh;
+  background-color: #4154f1;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  align-self: start;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  gap: 0.3rem;
+  gap: 1rem;
+}
+
+.frgtPass{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.1rem;
+}
+.regBtn{
+    text-decoration: none;
+    color: #0DCAF0;
+    font-size: 1.1rem;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
