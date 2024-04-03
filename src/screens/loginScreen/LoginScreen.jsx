@@ -1,14 +1,17 @@
 import React from "react";
 import "./style.css";
-import { Navbar } from "../commons";
+import { Link } from "react-router-dom";
+import { Navbar } from "../../commons";
 function LoginScreen() {
   return (
     <>
-      <Navbar />
+    <Navbar/>
+
       <div className="container">
         <div className="leftSide">
           <h1>
-            Attendance <br /> <span className="coloredText">for your School</span>
+            Attendance <br />{" "}
+            <span className="coloredText">for your School</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
@@ -50,23 +53,26 @@ function LoginScreen() {
           </div>
           <div className="btns">
             <div className="cheakcbox">
-                <input
-                  type="checkbox"
-                  // checked={rememberMe}
-                  // onChange={handleCheckboxChange}
-                />
-              <label>
-                Remember me
-              </label>
+              <input
+                type="checkbox"
+                // checked={rememberMe}
+                // onChange={handleCheckboxChange}
+              />
+              <label>Remember me</label>
             </div>
-            <button type="submit" className="btnLogin">
+            <Link to="/sidebar" type="submit" className="btnLogin">
               Sign in
-            </button>
+            </Link>
 
-            <a href="" className="frgtPass">Forgot password?</a>
+            <a href="" className="frgtPass">
+              Forgot password?
+            </a>
 
             <span>
-              Don't have an account? <a href="" className="regBtn">Register Here</a>
+              Don't have an account?{" "}
+              <a href="" className="regBtn">
+                Register Here
+              </a>
             </span>
           </div>
         </form>

@@ -18,15 +18,15 @@
   gap: 2rem;
   height: 70vh;
 }
-.leftSide h1{
-    font-size: 2.5rem;
+.leftSide h1 {
+  font-size: 2.5rem;
 }
-.coloredText{
-    color: #4154f1;
+.coloredText {
+  color: #4154f1;
 }
-.leftSide p{
-    width: 90%;
-    font-size:  1.15rem;
+.leftSide p {
+  width: 90%;
+  font-size: 1.15rem;
 }
 form {
   width: 40%;
@@ -72,16 +72,21 @@ form {
   border: 2px solid rgb(170, 170, 170);
   border-radius: 4px;
 }
-.cheakcbox{
-    display: flex;
-    gap: 5px;
+.cheakcbox {
+  display: flex;
+  gap: 5px;
 }
 .btnLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 15%;
   height: 6vh;
+  text-decoration: none;
   background-color: #4154f1;
   color: white;
   border-radius: 5px;
+  font-size: 1.2rem;
   border: none;
   align-self: start;
 }
@@ -94,24 +99,24 @@ form {
   gap: 1rem;
 }
 
-.frgtPass{
-    text-decoration: none;
-    color: gray;
-    font-size: 1.1rem;
+.frgtPass {
+  text-decoration: none;
+  color: gray;
+  font-size: 1.1rem;
 }
-.regBtn{
-    text-decoration: none;
-    color: #0DCAF0;
-    font-size: 1.1rem;
+.regBtn {
+  text-decoration: none;
+  color: #0dcaf0;
+  font-size: 1.1rem;
 }
 
 @keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0); 
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import { IMAGES_PATHS } from "../../../constants";
 
 function Navbar({ search, notificationAndprofile }) {
   return (
@@ -15,7 +14,7 @@ function Navbar({ search, notificationAndprofile }) {
       </div>
       {notificationAndprofile && (
         <div className="rightSide">
-          <img src={IMAGES_PATHS.notificationBell} alt="Notification bell" />
+          <img src={IMAGES_PATHS} alt="Notification bell" />
 
           <div className="profile">
             <img

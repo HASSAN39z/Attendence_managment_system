@@ -1,0 +1,18 @@
+.container {
+  height: 10vh;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+.container:hover,
+.customBtn:hover {
+  background-color: #f6f9ff;
+  color: #4154f1;
+}
+.customBtn {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000;
+}
